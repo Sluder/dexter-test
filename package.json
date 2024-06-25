@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node dist/dxtr.js"
+    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+    "start": "NODE_NO_WARNINGS=1 node --es-module-specifier-resolution=node ./dist/dxtr.js"
   },
   "dependencies": {
-    "@indigo-labs/dexter": "^5.2.0"
+    "@indigo-labs/dexter": "^5.2.0",
+    "tsc-alias": "^1.8.10"
   }
 }
-
