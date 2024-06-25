@@ -1,0 +1,12 @@
+{
+  "name": "dexter-test",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/dxtr.js"
+  },
+  "dependencies": {
+    "@indigo-labs/dexter": "^5.2.0"
+  }
+}
+
